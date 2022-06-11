@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="./style/app.css">
+        <script src="./js/app.js" defer></script>
+
+        <!-- Aplicam stilul de la hover la elementul a carui atribut "href" incepe cu -->
+        <style>
+            .nav-menu .nav-link[href^="contact"] {
+                color: brown;
+                letter-spacing: 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Meniu navigatie -->
+        <nav>
+            <ul class="nav-menu">
+                <li>
+                    <a href="acasa.html" class="nav-link">Acasa</a>
+                </li>
+                <li>
+                    <a href="catalog.html" class="nav-link">Catalog</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <span id="mode-toggle"></span>
+        </nav>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88408.83732949155!2d21.16283160285048!3d46.17511124188132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745984ba35c59c3%3A0xf70074a3e558491!2sArad!5e0!3m2!1sro!2sro!4v1654945637289!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Container contact -->
+        <div class="container-contact">
+            <h1>Contact</h1>
+            <div class="contact-form">
+                <h2>Trimite un mesaj</h2>
+                <form>
+                    <div>
+                        <label>Nume</label>
+                        <input type="text" id="name" placeholder="Hai afara copii">
+                    </div>
+                    <div>
+                        <label>Subiect</label>
+                        <input type="text" id="subject" placeholder="Hai in cas copii">
+                    </div>
+                    <div>
+                        <label>Mesaj</label>
+                        <textarea id="message" placeholder="Culcat"></textarea>
+                    </div>
+                    <button id="send" type="submit" onsubmit="sendMsg()">Trimite</button>
+                </form>
+            </div>
+        </div>
+        <script src="./js/contact.js"></script>
+    </body>
+
+</html>
